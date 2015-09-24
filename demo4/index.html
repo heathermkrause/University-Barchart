@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin: 1em auto 4em auto;
+    position: relative;
+    tab-size: 2;
+    width: 960px;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+.background path {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.other {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 10;
+    stroke-opacity: .2;
+}
+
+.average {
+    fill: none;
+    stroke: green;
+    stroke-width: 10;
+    stroke-opacity: .2;  
+}
+
+
+.otherCircle {
+    fill: steelblue;
+    stroke: none;
+/*    stroke-width: 10;*/
+    opacity: .5;
+    cursor: pointer;    
+}
+
+.averageCircle {
+    fill: green;
+    stroke: none;
+/*    stroke-width: 10;*/
+    opacity: .5;  
+}
+
+.brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  pointer-events: none;
+}
+
+
+.dimension {
+  pointer-events: none;  
+}
+
+
+.axis text {
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+
+circle {
+  opacity: .3;
+}
+
+
+
+.Toronto {
+  fill: #8165A2;
+}
+
+.Guelph, .McMaster, .Ottawa, .Queen, .Western, .Waterloo {
+  fill: #01B0F3;
+}
+
+.Carleton, .Ryerson, .Windsor, .York {
+  fill: #92D051;
+}
+
+.Algoma, .Brock, .Lakehead, .Laurentian, .Nipissing, .OCADU, .UOIT, .Trent, .Laurier {
+  fill: #EFBE31;
+  
+}
+
+div {
+  margin-top: 25px;
+}
+
+</style>
+<body>
+<div class="main">
+  <select id="select"></select>
+
+
+  
+  <div class="svg1">
+    Category 1 (ACCESS)
+  </div>
+
+  <div class="svg2">
+    Category 2 (SUPPLY AND DEMAND)
+  </div>  
+
+  
+</div>
+
+  
+<script src="dataNew.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="script.js"></script>
